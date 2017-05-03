@@ -37,8 +37,10 @@
         <div class="col-md-12">
             <h2>@evnt.Title</h2>
             <ul>
-
-                    @Html.Partial("_EventItem", evnt.Title)
+                @foreach (var show in Model.Events )
+                {
+                    @Html.Partial("_EventItem", show)
+                }
             </ul>
         </div>
     </div>
