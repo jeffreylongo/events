@@ -14,5 +14,6 @@ namespace events.Models
         public DateTime EndTime { get; set; }
         public int VenueId { get; set; }
         public int GenreId { get; set; }
+        public int Price { get; set; }
     }
 }

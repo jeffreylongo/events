@@ -50,6 +50,10 @@ namespace events.Migrations
             var events = new List<Events>
             {
                 new Events{ Title = "Pennywise", Description = "punkrock band from Hermosa Beach, CA",
+                    StartTime = DateTime.Now, EndTime = DateTime.Now, VenueId = 1, GenreId = 1 },
+                new Events{ Title = "NOFX", Description = "punkrock band from Los Angeles, CA",
+                    StartTime = DateTime.Now, EndTime = DateTime.Now, VenueId = 2, GenreId = 1 },
+                new Events{ Title = "The Misfits", Description = "punkrock band from Lodi, NJ",
                     StartTime = DateTime.Now, EndTime = DateTime.Now, VenueId = 1, GenreId = 1 }
             };
             events.ForEach(evnt => context.Events.AddOrUpdate(e => e.Title, evnt));

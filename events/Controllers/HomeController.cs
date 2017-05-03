@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using events.ViewModels;
 
 namespace events.Controllers
 {
@@ -31,7 +32,7 @@ namespace events.Controllers
 
         public ActionResult Index()
         {
-            var eventsFromCache = HttpRuntime.Cache["events"];
+            var eventsFromCache = HttpRuntime.Cache["events"] as IEnumerable<Events>;
             if (eventsFromCache == null)
             {
                 //display the events
@@ -45,10 +46,16 @@ namespace events.Controllers
                     new TimeSpan(),
                     System.Web.Caching.CacheItemPriority.High,
                     null);
-                eventsFromCache = HttpRuntime.Cache["events"];
+                eventsFromCache = HttpRuntime.Cache["events"] as IEnumerable<Events>;
 
             }
-            return View(eventsFromCache);
+
+            var vm = new HomePageViewModel
+            {
+                Events = eventsFromCache
+            };
+
+            return View(vm);
 
 
 

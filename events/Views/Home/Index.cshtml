@@ -1,4 +1,4 @@
-﻿@model IEnumerable<events.Models.Events>
+﻿@model events.ViewModels.HomePageViewModel
 @{
     ViewBag.Title = "Home Page";
 }
@@ -11,10 +11,16 @@
     <h1>Welcome to TIY Music Bar</h1>
 </div>
 
-@foreach (var evnt in Model)
-{
+<h1>Upcoming Shows</h1>
 
-    <h1>Upcoming Shows</h1>
+<div class="row">
+    <div class="col-md-12">
+
+    </div>
+</div>
+
+@foreach (var evnt in Model.Events)
+{
     <div class="row">
         <div class="col-md-12">
             <h3>@evnt.Title</h3>
