@@ -31,3 +31,16 @@
     </div>
 }
 
+@foreach (var evnt in Model.Events)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@evnt.Title</h2>
+            <ul>
+
+                    @Html.Partial("_EventItem", evnt.Title)
+            </ul>
+        </div>
+    </div>
+}
+
