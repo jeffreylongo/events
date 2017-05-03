@@ -224,6 +224,10 @@
     <Compile Include="Migrations\201705031900530_someStuff.Designer.cs">
       <DependentUpon>201705031900530_someStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705032005441_PriceToDouble.cs" />
+    <Compile Include="Migrations\201705032005441_PriceToDouble.Designer.cs">
+      <DependentUpon>201705032005441_PriceToDouble.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\EventItem.cs" />
@@ -330,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705031900530_someStuff.resx">
       <DependentUpon>201705031900530_someStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705032005441_PriceToDouble.resx">
+      <DependentUpon>201705032005441_PriceToDouble.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

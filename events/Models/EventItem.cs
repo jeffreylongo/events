@@ -15,18 +15,18 @@ namespace events.Models
         }
         public EventItem(EventItem s)
         {
-            this.Name = s.Name;
+            this.Title = s.Title;
             this.Description = s.Description;
             this.Id = s.Id;
             this.Price = s.Price;
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Title { get; set; }
         public string Description { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:C}")]
-        public double Price { get; set; }
+        public int Price { get; set; }
 
 
         [NotMapped]
