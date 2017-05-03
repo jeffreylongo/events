@@ -1,4 +1,5 @@
 ﻿@model events.ViewModels.HomePageViewModel
+
 @{
     ViewBag.Title = "Home Page";
 }
@@ -37,7 +38,7 @@
         <div class="col-md-12">
             <h2>@evnt.Title</h2>
             <ul>
-                @foreach (var show in Model.Events )
+                @foreach (var show in events.Models.EventItems)
                 {
                     @Html.Partial("_EventItem", show)
                 }

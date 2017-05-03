@@ -204,29 +204,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705021830404_firstie.cs" />
-    <Compile Include="Migrations\201705021830404_firstie.Designer.cs">
-      <DependentUpon>201705021830404_firstie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705021901115_asljasdfjkasdfj.cs" />
-    <Compile Include="Migrations\201705021901115_asljasdfjkasdfj.Designer.cs">
-      <DependentUpon>201705021901115_asljasdfjkasdfj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705021916402_venueAndGenreAdded.cs" />
-    <Compile Include="Migrations\201705021916402_venueAndGenreAdded.Designer.cs">
-      <DependentUpon>201705021916402_venueAndGenreAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705031804537_addedPriceToEvent.cs" />
-    <Compile Include="Migrations\201705031804537_addedPriceToEvent.Designer.cs">
-      <DependentUpon>201705031804537_addedPriceToEvent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705031900530_someStuff.cs" />
-    <Compile Include="Migrations\201705031900530_someStuff.Designer.cs">
-      <DependentUpon>201705031900530_someStuff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201705032005441_PriceToDouble.cs" />
-    <Compile Include="Migrations\201705032005441_PriceToDouble.Designer.cs">
-      <DependentUpon>201705032005441_PriceToDouble.cs</DependentUpon>
+    <Compile Include="Migrations\201705032100434_reDo.cs" />
+    <Compile Include="Migrations\201705032100434_reDo.Designer.cs">
+      <DependentUpon>201705032100434_reDo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -320,23 +300,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705021830404_firstie.resx">
-      <DependentUpon>201705021830404_firstie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705021901115_asljasdfjkasdfj.resx">
-      <DependentUpon>201705021901115_asljasdfjkasdfj.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705021916402_venueAndGenreAdded.resx">
-      <DependentUpon>201705021916402_venueAndGenreAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705031804537_addedPriceToEvent.resx">
-      <DependentUpon>201705031804537_addedPriceToEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705031900530_someStuff.resx">
-      <DependentUpon>201705031900530_someStuff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705032005441_PriceToDouble.resx">
-      <DependentUpon>201705032005441_PriceToDouble.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705032100434_reDo.resx">
+      <DependentUpon>201705032100434_reDo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

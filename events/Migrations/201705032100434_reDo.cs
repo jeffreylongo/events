@@ -3,7 +3,7 @@ namespace events.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class firstie : DbMigration
+    public partial class reDo : DbMigration
     {
         public override void Up()
         {

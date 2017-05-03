@@ -7,13 +7,13 @@ namespace events.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class asljasdfjkasdfj : IMigrationMetadata
+    public sealed partial class reDo : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(asljasdfjkasdfj));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(reDo));
         
         string IMigrationMetadata.Id
         {
-            get { return "201705021901115_asljasdfjkasdfj"; }
+            get { return "201705032100434_reDo"; }
         }
         
         string IMigrationMetadata.Source
